@@ -64,7 +64,20 @@ body {
     margin-bottom: 30px;
 }
 
-.symmetry_img {
+canvas::before, canvas::after {
+    content: '';
+    background-image: url("images/cute_tree.png");
+    width: auto;
+    height: auto;
+}
+
+canvas::before {
+    float: left;
+}
+
+canvas::after {
+    float: right;
+    clear: right;
     transform:rotate(0deg);
     -moz-transform: scaleX(-1); 
     -o-transform: scaleX(-1); 
